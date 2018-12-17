@@ -27,22 +27,19 @@ section.box{
     height: 480px;
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
     flex-flow: row wrap;
-    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-around;
     
 }
 section.box > div{
-    line-height: 140px;
+    margin: 30px;
     text-align: center;
     font-size: 5rem;
-    border-radius: 5%;
-    width: 140px;
-    height: 140px;
-    margin: 30px;
-    background-image: radial-gradient(#58a6ff, #2c47e2);
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-image: linear-gradient(to right, #58a6ff, #2c47e2);
 
 }
-.b, .d, .f{align-self: flex-end;}
-.c, .d{flex-basis: 300px;}
-.b, .e{flex-basis: 100px;}
+/* .b, .d, .f{flex-grow: 3;} */
+

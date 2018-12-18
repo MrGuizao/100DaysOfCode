@@ -8,7 +8,7 @@
 
 }
 body{
-    background-image: linear-gradient(to right, #62c5f3, #1746e2);
+    background-image: linear-gradient(to right, #62c5f3, #3161ff);
     width: 100vw;
     height: 100vh;
 
@@ -57,7 +57,6 @@ section.box > div{
     background-color:#4863ff;
 
 }
-.b, .d, .f{flex-grow: 2;}
 
 /* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
 /* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
@@ -66,7 +65,8 @@ section.box > div{
 /* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
 
 .container{
-    margin: 0 150px;
+    text-align: center;
+    margin: 0 50px;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -74,7 +74,39 @@ section.box > div{
 
 }
 .container > li{flex: 1;}
-.container li{padding: 20px;}
+.container li{padding: 15px;}
 .container > li:nth-child(odd){background-color: #35c777;}
 .container > li:nth-child(even){background-color: #a73cff;}
-.container > li:nth-child(4){flex-grow: 5;}
+.container > li:nth-child(3n+1){flex-grow: 2;}
+
+
+.container2{
+    text-align: center;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+.container2 > li{flex: 1;}
+.container2 li{padding: 15px;}
+.container2 > li:nth-child(odd){background-color: #ee3030;}
+.container2 > li:nth-child(even){background-color: #0226c7;}
+.container2 > li:nth-of-type(3n+2){flex-grow: 2;}
+/* .container2 > a:nth-of-type(n){flex-grow: 4;} */
+
+
+.align{
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.align > li{background-color: brown; flex: 1; text-align: center; padding: 15px;}
+.a, .d{align-self: flex-end;}
+.b{align-self: center;}
+.c{align-self: flex-start;}
+

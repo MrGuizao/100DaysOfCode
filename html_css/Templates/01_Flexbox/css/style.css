@@ -28,7 +28,7 @@ header nav ul li a{
 }
 header h1{
     text-transform: uppercase; 
-    padding: 50px 0;
+    padding: 20px 0;
     font-weight: 800;
     font-size: 4rem;
     text-align: center;
@@ -105,8 +105,40 @@ section.box > div{
     border: 2px solid rgb(255, 255, 255);
 
 }
-.align > li{background-color: brown; flex: 1; text-align: center; padding: 15px;}
+.align > li{background-color: brown; text-align: center; padding: 15px;}
 .a, .d{align-self: flex-end;}
-.b{align-self: center;}
-.c{align-self: flex-start;}
+.b{align-self: center; flex-grow: 3; order: 3;}
+.c{align-self: flex-start; flex-grow: 2; order: 1;}
+.a{order: 4;}
+.d{order: 2;}
 
+
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+
+
+.grid{
+    margin: 2px 50px;
+    height: 60%;
+    border: 4px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+.g-one{grid-column: 1 / 3;}
+.g-four{grid-column: 1 / 3; grid-row: 2 / 4;}
+
+
+.grid li:nth-child(odd){
+    background-color: rgb(148, 148, 148);
+}
+.grid li:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+body{
+    background-image: linear-gradient(to right, #62c5f3, #3161ff);
+    width: 100%;
+    height: 100%;
+
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+}
+header nav ul{display: flex;}
+header nav ul li a{
+    margin: 0 50px;
+    font-size: 26px;
+    font-weight: 500;
+
+}
+header h1{
+    text-transform: uppercase; 
+    padding: 20px 0;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+section.box{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 600px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    
+}
+section.box > div{
+    margin: 30px;
+    text-align: center;
+    font-size: 5rem;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color:#4863ff;
+
+}
+
+/* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
+/* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
+/* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
+/* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
+/* FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX - FLEXBOX */
+
+.container{
+    text-align: center;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: 2px solid black;
+
+}
+.container > li{flex: 1;}
+.container li{padding: 15px;}
+.container > li:nth-child(odd){background-color: #35c777;}
+.container > li:nth-child(even){background-color: #a73cff;}
+.container > li:nth-child(3n+1){flex-grow: 2;}
+
+
+.container2{
+    text-align: center;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+.container2 > li{flex: 1;}
+.container2 li{padding: 15px;}
+.container2 > li:nth-child(odd){background-color: #ee3030;}
+.container2 > li:nth-child(even){background-color: #0226c7;}
+.container2 > li:nth-of-type(3n+2){flex-grow: 2;}
+/* .container2 > a:nth-of-type(n){flex-grow: 4;} */
+
+
+.align{
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.align > li{background-color: brown; text-align: center; padding: 15px;}
+.a, .d{align-self: flex-end;}
+.b{align-self: center; flex-grow: 3; order: 3;}
+.c{align-self: flex-start; flex-grow: 2; order: 1;}
+.a{order: 4;}
+.d{order: 2;}
+
+
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+/*  GRID SYSTEM - GRID SYSTEM - GRID SYSTEM - GRID SYSTEM */
+
+
+.grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+.grid{
+    margin: 2px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 5px;
+
+}
+.horizontal{
+    grid-column: span 2;
+}
+/* .vertical{
+    grid-row: 1 / 3; 
+}
+.big{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+} */

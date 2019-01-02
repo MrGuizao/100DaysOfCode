@@ -1,0 +1,17 @@
+@import "_pular";
+h2 {
+     font-size: 3rem;
+     color: #454545;
+     text-align: center;
+     padding: 20px;
+}
+.botao {
+     @include flex;
+     background-color: #454545;
+     button {
+          margin: 50px 10px;
+          font-size: 1rem;
+          padding: 20px 50px;
+          border: none;
+     }
+}

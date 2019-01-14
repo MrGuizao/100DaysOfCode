@@ -3,20 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   list-style: none;
   text-decoration: none;
-  background-size: cover;
 }
 
-h2 {
-  font-size: 3rem;
-  color: #454545;
-  text-align: center;
-  padding: 20px;
-}
-
-.botao {
+header {
+  background-color: #3f3f3f;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,13 +20,130 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #454545;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.botao button {
-  margin: 50px 10px;
-  font-size: 1rem;
-  padding: 20px 50px;
-  border: none;
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 780px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 30px;
+}
+
+header nav ul li a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #707070;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+main .foto1 img {
+  width: 100%;
+}
+
+main .foto1 .apresenta {
+  position: absolute;
+  font-size: 2rem;
+  left: 55%;
+  line-height: 75px;
+  text-transform: capitalize;
+  color: #fff;
+  top: 90px;
+}
+
+main .foto1 .apresenta h1 {
+  font-weight: normal;
+}
+
+main .foto1 .apresenta2 {
+  position: absolute;
+  font-size: 2rem;
+  left: 55%;
+  line-height: 75px;
+  text-transform: capitalize;
+  color: #fff;
+  top: 850px;
+  color: #000;
+}
+
+main .foto1 .apresenta2 h1 {
+  font-weight: normal;
+}
+
+main section.services {
+  font-size: 1.4rem;
+  color: #000;
+  margin: 6px;
+}
+
+main section.services li {
+  float: left;
+  text-align: center;
+  width: 33.33333%;
+}
+
+main section.services img {
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px dashed #f833ff;
+  margin: 50px 0;
+}
+
+main section.services img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.xadrez li {
+  float: left;
+  margin-right: 0.5%;
+  margin-bottom: 0.5%;
+  width: 12.0625%;
+}
+
+.xadrez li:nth-child(8n) {
+  margin-right: 0;
+}
+
+@media (max-width: 780px) {
+  .xadrez li {
+    float: left;
+    margin-right: 0.2%;
+    margin-bottom: 0.2%;
+    width: 19.84%;
+  }
+  .xadrez li:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+.xadrez li img {
+  width: 100%;
 }
 /*# sourceMappingURL=Template.css.map */

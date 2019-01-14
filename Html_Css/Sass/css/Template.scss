@@ -1,17 +1,97 @@
 @import "_pular";
-h2 {
-     font-size: 3rem;
-     color: #454545;
-     text-align: center;
-     padding: 20px;
+header {
+     background-color: cores(darkcinza);
+     padding: 10px 0;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-evenly;
+     align-items: center;
+     nav {
+          ul { 
+               @include mediaquery(780px){
+                    flex-flow: column wrap;
+                    align-items: center;
+               }
+               display: flex;
+               li {
+                    a {
+                         color: cores(branco);
+                         font-size: 16px;
+                         margin: 0 30px;
+                         &:hover {
+                              transition: 0.2s;
+                              color: cores(cinza);
+                         }
+                    }
+               }
+          }
+     }
 }
-.botao {
-     @include flex;
-     background-color: #454545;
-     button {
-          margin: 50px 10px;
-          font-size: 1rem;
-          padding: 20px 50px;
-          border: none;
+
+@mixin palavras {
+     position: absolute;
+     font-size: 2rem;
+     left: 55%;
+     line-height: 75px;
+     text-transform: capitalize;
+     color: cores(branco);
+     h1 {
+          font-weight: normal;
+     }
+}
+
+@mixin imagem {
+     position: relative;
+     width: 100%;
+     color: cores(branco);
+     .foto1 {
+          img {
+               width: 100%;
+          }
+          .apresenta {
+               @include palavras;
+               top: 90px;
+               
+          }
+          .apresenta2{
+               @include palavras;
+               top: 850px;
+               color: cores(preto);
+          }
+     }
+}
+
+main {
+     @include imagem;
+     section.services{
+          font-size: 1.4rem;
+          color: cores(preto);
+          margin: 6px;
+          li{
+               float: left;
+               text-align: center;
+               width: (100% / 3);
+          }
+          img{
+               border-radius: 50%;
+               padding: 8px;
+               border: 1px dashed cores(rosa);
+               margin: 50px 0;
+               &:hover{
+                    transition: 0.3s;
+                    transform: scale(1.1);
+               }
+          }
+     }
+}
+.xadrez li{
+     @include grid(8, 0.5%);
+     @include mediaquery(780px){
+          @include grid(5, 0.2%);
+          
+     }
+     img{
+          width: 100%;
+
      }
 }

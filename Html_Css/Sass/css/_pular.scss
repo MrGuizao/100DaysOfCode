@@ -2,13 +2,37 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     width: 100%;
      list-style: none;
      text-decoration: none;
-     background-size: cover;
+
 }
-@mixin flex {
-     display: flex;
-     flex-flow: row nowrap;
-     justify-content: space-evenly;
+$colors:(
+     branco: #fff,
+     preto: #000,
+     cinza: #707070,
+     darkcinza: #3f3f3f,
+     azul: #2395ff,
+     laranja: #ff9d2c,
+     rosa: #f833ff
+
+);
+@function cores($cor){
+     @return map-get($colors, $cor);
+
+}
+@mixin grid($cols, $margin){
+     float: left;
+     margin-right: $margin;
+     margin-bottom: $margin;
+     width: ((100% - (($cols - 1) * $margin)) / $cols);
+     &:nth-child(#{$cols}n){
+          margin-right: 0;
+     }
+
+}
+@mixin mediaquery($quebra){
+     @media (max-width: $quebra){
+          @content;
+     }
+
 }

@@ -1,0 +1,66 @@
+:root {
+     /* CORES */
+     --bg-branco: #fff;
+     --bg-cinzaclaro: #c4c4c4;
+     --bg-cinza: #283142;
+     --bg-cinzaescuro: #1c2431;
+     --bg-preto: #000;
+     --bg-verde: #4dff5b;
+     --bg-amarelo: #ffd23d;
+     --bg-vermelho: #f03b3b;
+     --bg-azul: #2e89ff;
+
+     /* TAMANHOS */
+     --size-section: 580px;
+     --size-padding-padrao: 15px;
+     --size-padding-padrao-duplo: 30px;
+     --size-form: 30px;
+     --border-shadow: 2px 5px 8px var(--bg-preto);
+     --border: 4px;
+     --icones: 2.2rem;
+
+     /* FONTS SIZE */
+     --font-h1: 2rem;
+     --font-h2: 1.6rem;
+     --font-h3: 2rem;
+     --font-h4: 2rem;
+     --font-h5: 2rem;
+     --font-h6: 2rem;
+     --font-a: 0.6rem;
+     
+     /* GRAFICOS CORES FOTO*/
+     --bg-graf: #283142;
+     --bg-graf: #1c2431;
+     --bg-graf: #3b3b3b;
+     --bg-graf: #313131;
+     
+}
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     list-style: none;
+     text-decoration: none;
+     font: inherit;
+     vertical-align: baseline;
+     scroll-behavior: inherit;
+}
+a{
+     color: var(--bg-branco);
+     text-transform: capitalize;
+}
+h1{
+     font-size: var(--font-h1);
+     color: var(--bg-branco);
+}
+h2{
+     font-size: var(--font-h2);
+     margin: var(--size-padding-padrao);
+     text-align: center;
+     text-transform: capitalize;
+     font-weight: 600;
+     letter-spacing: 1px;
+}
+footer i.fa-facebook-square {color: #29487D;}
+footer i.fa-instagram {color: #bc2a8d;}
